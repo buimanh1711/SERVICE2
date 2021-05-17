@@ -55,8 +55,5 @@
 }
 
 #admin .main-content .page-container .category ul li span.action button {
-  background: rgb(247, 247, 247);
   border: none;
-  outline: none;
-  cursor: pointer;
 }

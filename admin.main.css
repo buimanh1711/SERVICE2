@@ -131,7 +131,7 @@ a {
   cursor: pointer;
 }
 
-#admin .main-content .page-container .service ul li span.action button.edit {
+#admin .main-content .page-container ul li span.action button.edit {
   height: 32px;
   width: 32px;
   background: rgb(248, 174, 64);
@@ -139,7 +139,7 @@ a {
   border-radius: 2px;
 }
 
-#admin .main-content .page-container .service ul li span.action button.delete {
+#admin .main-content .page-container ul li span.action button.delete {
   height: 32px;
   width: 32px;
   background: rgb(245, 59, 59);

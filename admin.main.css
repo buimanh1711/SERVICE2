@@ -126,8 +126,23 @@ a {
 }
 
 #admin .main-content .page-container .service ul li span.action button {
-  background: rgb(247, 247, 247);
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+#admin .main-content .page-container .service ul li span.action button.edit {
+  height: 32px;
+  width: 32px;
+  background: rgb(248, 174, 64);
+  color: white;
+  border-radius: 2px;
+}
+
+#admin .main-content .page-container .service ul li span.action button.delete {
+  height: 32px;
+  width: 32px;
+  background: rgb(245, 59, 59);
+  color: white;
+  border-radius: 2px;
 }

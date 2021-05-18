@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="https://kit.fontawesome.com/cc8d84a666.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./home.css">
+</head>
+
+<body>
+  <div id="home">
+    <div class='app-container'>
+      <!-- header -->
+      <div class='header'>
+        <div class='container'>
+          <div class='header-container'>
+            <div class='logo-wrapper'>
+              <a href='/'>
+                <img src='https://upload.wikimedia.org/wikipedia/vi/archive/6/66/20210321074939%21Logo_VTC.png' />
+              </a>
+            </div>
+            <div class='header-menu desktop'>
+              <ul class='menu'>
+                <li class='menu'>
+                  <a class='menu' href='/'>
+                    Trang chủ
+                  </a>
+                </li>
+                <li class='menu'>
+                  <a class='menu' href='/'>
+                    Dịch vụ
+                  </a>
+                  <ul class='child'>
+                    <li>
+                      <a href='/' class='child'>
+                        dịch vụ con
+                      </a>
+                    </li>
+                    <li>
+                      <a href='/' class='child'>
+                        dịch vụ con
+                      </a>
+                    </li>
+                    <li>
+                      <a href='/' class='child'>
+                        dịch vụ con
+                      </a>
+                    </li>
+                    <li>
+                      <a href='/' class='child'>
+                        dịch vụ con
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class='header-search'>
+              <form>
+                <input required placeholder="Tìm kiếm dịch vụ" />
+                <button><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+            <div class='sign desktop'>
+              <div class="sign-container">
+                <!-- logged -->
+                <img class='img'
+                  src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtECfiH_G-meOhY56HWxjffLhj0PVIymnF95Q9qYW2lKAHBHmqANZ0mje5Gn7omLyaWwg&usqp=CAU' />
+                <span>Bùi Mạnh</span>
+                <a class='logout' href='/dang-nhap'>Đăng xuất</a>
+
+                <!-- unlog -->
+                <!-- <a title='Đăng nhập' class='login' href='/dang-nhap'>
+                  <i class="fas fa-sign-in-alt"></i>
+                  Đăng nhập
+                </a> -->
+              </div>
+            </div>
+            <div class='bar-btn mb'>
+              <button>
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+            <div class='overlay mb'></div>
+            <div class='mb-menu mb'>
+              <button><i class="far fa-window-close"></i></button>
+              <div class='mb-menu-container'>
+                <ul>
+                  <li><a>Chuyyên mục 1</a></li>
+                  <li><a>Chuyyên mục 1</a></li>
+                  <li><a>Chuyyên mục 1</a></li>
+                  <li><a>Chuyyên mục 1</a></li>
+                  <li><a>Chuyyên mục 1</a></li>
+                </ul>
+                <div class='mb-sign'>
+                  <a>Bùi Mạnh</a>
+                  <a>Đăng xuất</a>
+                  <!-- <a>Đăng nhập</a>
+                  <a>Đăng ký</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          const barsBtn = document.querySelector('#home .header-container .bar-btn button')
+          const menuMb = document.querySelector('#home .mb-menu')
+          const closeBtn = document.querySelector('#home .mb-menu button')
+          const overlay = document.querySelector('#home .overlay')
+
+          console.log(menuMb)
+          barsBtn.addEventListener('click', function () {
+            menuMb.classList.add('active')
+            overlay.classList.add('active')
+          })
+
+          closeBtn.addEventListener('click', function () {
+            menuMb.classList.remove('active')
+            overlay.classList.remove('active')
+          })
+
+        </script>
+      </div>
+      <!-- end header -->
+
+      <!-- banner (home only) -->
+      <div class='banner'>
+        <div class='banner-background desktop'>
+          <div class='banner-overlay'>
+            <span>Quản lý dịch vụ dân sinh</span>
+          </div>
+        </div>
+      </div>
+      <!-- end banner -->
+      <div class='content'>
+        <div class='container'>
+          <div class='home-page-container'>
+            <div class='categories'>
+              <div class='cate-head'>
+                <div class='cate-name'>
+                  <span></span>
+                  Các dịch vụ y tế
+                </div>
+                <a class='see-more' href='/'>Xem thêm...</a>
+              </div>
+              <div class='row categories-container'>
+                <div class='col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3'>
+                  <a href='/'>
+                    <div class='service-background'
+                      style='background: url(https://giatlatokyo.com/wp-content/uploads/2021/04/gi-t-la.jpg)'>
+                      <span>Dịch vụ tiêm chủng</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class='col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3'>
+                  <a href='/'>
+                    <div class='service-background'
+                      style='background: url(https://giatlatokyo.com/wp-content/uploads/2021/04/gi-t-la.jpg)'>
+                      <span>Dịch vụ tiêm chủng</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class='col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3'>
+                  <a href='/'>
+                    <div class='service-background'
+                      style='background: url(https://giatlatokyo.com/wp-content/uploads/2021/04/gi-t-la.jpg)'>
+                      <span>Dịch vụ tiêm chủng</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class='col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3'>
+                  <a href='/'>
+                    <div class='service-background'
+                      style='background: url(https://giatlatokyo.com/wp-content/uploads/2021/04/gi-t-la.jpg)'>
+                      <span>Dịch vụ tiêm chủng</span>
+                    </div>
+                  </a>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class='categories'>
+              <div class='cate-head'>
+                <div class='cate-name'>
+                  <span></span>
+                  Các dịch vụ y tế
+                </div>
+                <a class='see-more' href='/'>Xem thêm...</a>
+              </div>
+              <div class='row categories-container'>
+                <div class='col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3'>
+                  <a href='/'>
+                    <div class='service-background'
+                      style='background: url(https://giatlatokyo.com/wp-content/uploads/2021/04/gi-t-la.jpg)'>
+                      <span>Dịch vụ tiêm chủng</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class='col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3'>
+                  <a href='/'>
+                    <div class='service-background'
+                      style='background: url(https://giatlatokyo.com/wp-content/uploads/2021/04/gi-t-la.jpg)'>
+                      <span>Dịch vụ tiêm chủng</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class='col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3'>
+                  <a href='/'>
+                    <div class='service-background'
+                      style='background: url(https://giatlatokyo.com/wp-content/uploads/2021/04/gi-t-la.jpg)'>
+                      <span>Dịch vụ tiêm chủng</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class='col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3'>
+                  <a href='/'>
+                    <div class='service-background'
+                      style='background: url(https://giatlatokyo.com/wp-content/uploads/2021/04/gi-t-la.jpg)'>
+                      <span>Dịch vụ tiêm chủng</span>
+                    </div>
+                  </a>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class='categories'>
+              <div class='cate-head'>
+                <div class='cate-name'>
+                  <span></span>
+                  Các dịch vụ y tế tiêm chủng
+                </div>
+                <a class='see-more' href='/'>Xem thêm...</a>
+              </div>
+              <div class='row categories-container'>
+                <div class='col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3'>
+                  <a href='/'>
+                    <div class='service-background'
+                      style='background: url(https://giatlatokyo.com/wp-content/uploads/2021/04/gi-t-la.jpg)'>
+                      <span>Dịch vụ tiêm chủng</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class='col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3'>
+                  <a href='/'>
+                    <div class='service-background'
+                      style='background: url(https://giatlatokyo.com/wp-content/uploads/2021/04/gi-t-la.jpg)'>
+                      <span>Dịch vụ tiêm chủng</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class='col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3'>
+                  <a href='/'>
+                    <div class='service-background'
+                      style='background: url(https://giatlatokyo.com/wp-content/uploads/2021/04/gi-t-la.jpg)'>
+                      <span>Dịch vụ tiêm chủng</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class='col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3'>
+                  <a href='/'>
+                    <div class='service-background'
+                      style='background: url(https://giatlatokyo.com/wp-content/uploads/2021/04/gi-t-la.jpg)'>
+                      <span>Dịch vụ tiêm chủng</span>
+                    </div>
+                  </a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div id='footer'>
+        <div class='container'>
+          <div class="footer-container">
+            <div class="left">
+              <p><strong>CƠ QUAN TRUNG ƯƠNG ĐẢNG CỘNG SẢN VIỆT NAM</strong></p>
+              <p><strong>Tiếng nói của Đảng, Nhà nước và nhân dân Việt Nam trên mạng internet</strong></p>
+              <p><strong>CƠ QUAN CHỦ QUẢN: BAN TUYÊN GIÁO TRUNG ƯƠNG</strong></p>
+              <p>Toà soạn: 381 Đội Cấn, Ba Đình, Hà Nội</p>
+              <p>Điện thoại: 08 048161 / 08 048162; Fax: 08 044175</p>
+              <p>E-mail: toasoan@dangcongsan.vn</p>
+              <p>Giấy phép số: 373/GP-BTTTT của Bộ Thông tin và Truyền thông</p>
+            </div>
+            <div class="right">
+              <p>Chịu trách nhiệm nội dung:</p>
+              <p>Tổng biên tập: <strong>TS Trần Doãn Tiến</strong></p>
+              <p>Các Phó Tổng biên tập: <strong>TS Nguyễn Công Dũng</strong></p>
+              <p>Ủy viên Ban biên tập: <strong> ThS Phạm Đức Thái</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</body>
+
+</html>
